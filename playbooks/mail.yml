@@ -1,0 +1,7 @@
+---
+# file: mail.yml
+- hosts: all
+  sudo: True
+  remote_user: "{{ bootstrap_user }}"
+  roles:
+     - { role: mail, tags: mail}

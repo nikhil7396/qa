@@ -1,0 +1,7 @@
+---
+# file: common.yml
+- hosts: all
+  sudo: True
+  remote_user: "{{ bootstrap_user }}"
+  roles:
+     - { role: role-common, tags: common}

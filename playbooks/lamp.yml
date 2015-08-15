@@ -1,0 +1,7 @@
+---
+# file: lamp.yml
+- hosts: lamp
+  sudo: True
+  remote_user: "{{ bootstrap_user }}"
+  roles:
+     - { role: role-lamp, tags: lamp}

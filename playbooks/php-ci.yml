@@ -1,0 +1,7 @@
+---
+# file: php-ci.yml
+- hosts: ci
+  sudo: True
+  remote_user: "{{ bootstrap_user }}"
+  roles:
+     - { role: role-jenkins-php, tags: php-ci}
